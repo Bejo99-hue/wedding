@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEDDING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+    rel="stylesheet">
+
+    <!-- Countdown CSS lokal -->
+    <link rel="stylesheet" href="countdown/dark.css">
+
+    <!-- Countdown JS lokal -->
+    <script src="countdown/simplyCountdown.umd.js"></script>
+
+    <!-- js daun goyang -->
+    <script>
+    const elemenDaun = document.querySelectorAll('.animasi-daun, .animasi-daun1');
+    elemenDaun.forEach((daun) => {
+      daun.addEventListener('animationend', () => {
+        daun.classList.add('goyang');
+      });
+    });
+    </script>
+
+<!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- hero -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center
+    align-items-center text-white">
+    <main>
+        <h3 class="slide-in-top1">Dear <span></span></h3>
+        <h3 class="slide-in-top1">We Invite You To the Wedding of</h3>
+        <h1 class="slide-in-top1">Ridho & lutpi</h1>
+        <p class="slide-in-top1">Akan melangsungkan resepsi pernikahan dalam:</p>
+        <a href="#undangan" class="btn btn-lg mt-2 slide-in-top1"onclick="enableScroll()">Lihat Undangan</a>
+        <div class="simply-countdown-dark mt-4 slide-in-top1"></div>
+        
+        <img src="img/bingkai1.png" class="bingkai1-bunga animasi-daun " alt="bingkaiBunga1"/> 
+        <img src="img/14.png" class="daun-tropis animasi-daun"/>
+        <img src="img/15.png" class="daun-tropis1 animasi-daun"/> 
+        <img src="img/16.png" class="daun-tropis2 animasi-daun"/> 
+        <img src="img/17.png" class="daun-tropis3 animasi-daun1"/>
+        <img src="img/bingkai3.png" class="bingkai3-bunga animasi-daun1"/>
+         <img src="img/bingkaiFoto.png" class="bingkai"/>
+      </main>
+    </section>
+
+    <section id="undangan" class="kepala">
+  <div class="countainer">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text text-center">
+        <h1 class="ridho slide-in-top">Ridho</h1>
+        <h1 class="slide-in-top">&</h1>
+        <h1 class="slide-in-top">Lutpi</h1>
+        <img src="img/foto1.jpg" class="fotoKepala"/>
+        <img src="img/bingkaiFoto.png" class="bingkaiKepala"/>
+        <p>We are getting married</p>
+        <img src="img/pagar.png" class="pagarKepala"/> 
+        <img src="img/14.png" class="daunKepala animasi-daun1"/>
+        <img src="img/16.png" class="daunKepala2 animasi-daun"/>
+        <img src="img/15.png" class="daunKepala3 animasi-daun"/>
+        <img src="img/bunga2.png" class="bungaKepala animasi-daun"/>
+        <img src="img/bunga2.png" class="bungaKepala2 animasi-daun"/>
+        <img src="img/bunga4.png" class="bungaKepala3 animasi-daun"/>
+        <img src="img/bunga5.png" class="bungaKepala4 animasi-daun1"/>
+        <img src="img/bunga3.png" class="bungaKepala5 animasi-daun"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="navbar-nav ms-auto">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#info">Info</a>
+        <a class="nav-link" href="#story">Story</a>
+        <a class="nav-link" href="#galeri">Galeri</a>
+        <a class="nav-link" href="#gifts">Gifts</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+<!-- home -->
+
+<section id="home" class="home">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-10 text-center">
+      <h2 class="slide-in-top">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+      <p class="slide-in-top">Dengan memohon rahmat dan ridho Allah SWT, kami 
+        bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami: </p>
+    </div>
+  </div>
+
+  <div class="row couple">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-8 text-end">
+          <h3 class="slide-in-top">Ridho</h3>
+          <p class="slide-in-top" style="animation-delay: 0.8s;">awokawok awok awok wok dwkndkwndkwndkwndkwndkwndkwndkwdwn awok awok</p>
+          <p class="slide-in-top">putra dari bapak inyong <br> dan <br> ibu mu</p>
+          <a href="https://www.instagram.com/_ridhoakbartp/"><i class="bi bi-instagram slide-in-top"></i></a>
+        </div>
+        
+        <div class="col-4">
+          <img src="img/foto1.jpg" alt="ridho" class="img-responsive rounded-circle slide-in-top">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-4 mt-5">
+          <img src="img/foto1.jpg" alt="ridho" class="img-responsive rounded-circle slide-in-top">
+        </div>
+
+        <div class="col-8 mt-5">
+          <h3 class="slide-in-top">lutpi</h3>
+          <p class="slide-in-top">awokawok awok awok wok dwkndkwndkwndkwndkwndkwndkwndkwdwn awok awok</p>
+          <p class="slide-in-top">putra dari bapak inyong <br> dan <br> ibu mu</p>
+          <a href="https://www.instagram.com/_ridhoakbartp/"><i class="bi bi-instagram slide-in-top"></i></a>
+          <img src="img/pagar.png" class="pagar"/>
+          <img src="img/17.png" class="daunHome animasi-daun1"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- info -->
+
+<section id="info" class="info">
+  <div class="countainer">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text text-center">
+        <h3 class="slide-in-top pembuka1">Venue</h3>
+        <p class="slide-in-top">Dengan memohon Ridho dan Rahmat Allah SWT, 
+        kami bermaksud menyelenggarakan pernikahan kami yang Insya Allah akan diselenggarakan pada :</p>
+        <h3 class="slide-in-top pembuka2">Minggu,</h5>
+        <div class="jadwal-horizontal justify-content-center slide-in-top">
+          <span class="slide-in-top tanggal">29</span>
+          <span class="separator">|</span>
+          <div class="jadwal-vertikal">
+            <p class="bulan">September 2024</p>
+            <p class="jam">15:00 - 16:00</p>
+          </div>
+        </div>
+        <span><i class="bi bi-geo-alt"></i></span>
+        <h3 class="slide-in-top hotel">Hotel 88 Surabaya</h3>
+        <p class="slide-in-top">Jl. Embong Malang No.84, Genteng, Kec. Genteng, Surabaya, Jawa Timur 60261</p>
+        <a href="https://maps.app.goo.gl/Ew746kCQqPbarEMTA" target="_blank" class="btn btn-dark">Maps Tujuan</a>
+        <img src="img/pagar.png" class="pagar"/>
+        <img src="img/bunga4.png" class="bungaInfo animasi-daun"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI -->
+
+<section id="galeri" class="galeri">
+  <div class="container">
+    <div class="row gx-4 row-cols-md-5 row-cols-sd-4 row-cols-3 justify-content-center">
+      <div class="col mt-3">
+        <a href="img/galery/1.jpeg" data-toggle="lightbox" data-gallery="mygalery">
+          <img src="img/galery/tumbnail/1.jpeg" alt="foto1" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+
+      <div class="col mt-3">
+        <a href="img/galery/1.jpg" data-toggle="lightbox" data-gallery="mygalery">
+          <img src="img/galery/tumbnail/1.jpeg" alt="foto2" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+
+      <div class="col mt-3">
+        <a href="img/galery/2.jpg" data-toggle="lightbox" data-gallery="mygalery">
+          <img src="img/galery/tumbnail/1.jpeg" alt="foto3" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+
+      <div class="col mt-3">
+        <a href="img/galery/3.jpg" data-toggle="lightbox" data-gallery="mygalery">
+          <img src="img/galery/tumbnail/1.jpeg" alt="foto4" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+
+      <div class="col mt-3">
+        <a href="img/galery/4.jpg" data-toggle="lightbox" data-gallery="mygalery">
+          <img src="img/galery/tumbnail/1.jpeg" alt="foto5" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+
+      <div class="col mt-3">
+        <a href="img/galery/5.jpg" data-toggle="lightbox" data-gallery="mygalery">
+          <img src="img/galery/tumbnail/1.jpeg" alt="foto6" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+
+      <div class="col mt-3">
+        <a href="img/galery/6.jpg" data-toggle="lightbox" data-gallery="mygalery">
+          <img src="img/galery/tumbnail/1.jpeg" alt="foto7" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section id="rsvp" class="rsvp">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h2>Konfirmasi Kehadiran</h2>
+      </div>
+    </div>
+
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbxsUynJxAi2vy5B4oLet9WyC8LvhIYpo_R_kzWzwEJqDR9RrZw2Ie8g1qn29oKobO1t/exec" id="my-form">
+      <div class="mb-3 justify-content-center">
+      <label for="nama" class="form-label">Nama</label>
+      <input type="text" class="form-control" id="nama" placeholder="Name" name="nama">
+      </div>
+  
+      <div class="mb-3 justify-content-center">
+      <label for="telpon" class="form-label">No. Telpon</label>
+      <input type="number" class="form-control" id="telpon" placeholder="+62" name="telpon">
+      </div>
+    
+      <label for="jumlah" class="form-label">Jumlah Tamu</label>
+      <select class="form-select" aria-label="Default select example" id="jumlah" name="jumlah">
+      <option selected>Jumlah Tamu</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      </select>
+  
+      <select class="form-select mt-5" aria-label="Default select example" name="status">
+      <option selected>Konfirmasi Kehadiran</option>
+      <option value="hadir">Hadir</option>
+      <option value="tidak hadir">Tidak Hadir</option>
+      </select>
+  
+      <div class="col-12 text-center" style="margin-top: 30px;">
+        <button class="btn">KONFIRMASI</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- KOMENTAR -->
+ <div class="wedding-wishes">
+  <h2>Wedding Wishes</h2>
+  <form id="wish-form">
+    <input type="text" name="nama" placeholder="Nama" required>
+    <textarea name="pesan" maxlength="300" placeholder="Tulis harapan kamu" required></textarea>
+    <p>Huruf yang Tersisa: <span id="sisa-karakter">300</span></p>
+    <button type="submit">Kirim</button>
+  </form>
+
+  <div id="list-wishes">
+    <iframe src="https://script.google.com/macros/s/AKfycbzf_uTtzOJAKiJl9JTJqc6Q7YE3JgHxi6qKrGBuTRV-3v1Mtyn6jngD-y8sOHocakmt/exec" width="100%" height="300" frameborder="0"></iframe>
+  </div>
+</div>
+
+<!-- gift -->
+
+<section id="gift" class="gift">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span>Ungkapan tanda kasih</span>
+        <h2>Wedding gift</h2>
+        <img src="img/logobca.png" alt="logobca" class="logo">
+        <p>rido/lutpi no.rek</p>
+        <p id="rekening">6155198030</p>
+        <button class="btn" onclick="salinRekening()">Copy no. rek</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <small class="block">&copy;2025. All Rights Reserved. Design by @ibnuthdm</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="audio-container">
+  <audio id="lagu" loop>
+    <source src="audio/Dongker - Tuhan di Reruntuh Kota.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="audio-icon-wrapper" style="display: none;">
+    <i class="bi bi-disc"></i>
+  </div>
+</div>
+
+<!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+
+<script>
+  simplyCountdown('.simply-countdown-dark', {
+    year: 2025,
+    month: 9,
+    day: 13,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    enableUtc: false,
+   words: {
+            days: { root: 'hari', lambda: (root, n) => n > 1 ? root + 's' : root},
+            hours: { root: 'jam', lambda: (root, n) => n > 1 ? root + 's' : root },
+            minutes: { root: 'menit', lambda: (root, n) => n > 1 ? root + 's' : root },
+            seconds: { root: 'detik', lambda: (root, n) => n > 1 ? root + 's' : root }
+        },
+  });
+</script>
+
+<script>
+  const rootElement = document.querySelector(":root");
+  const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+  let isPlaying = false;
+  const lagu = document.querySelector('#lagu');
+  const audioIcon = document.querySelector('.audio-icon-wrapper i');
+
+  function disabelScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    
+    window.onscroll = function () {
+      window.scrollTo(scrollTop, scrollLeft);
+    }
+    
+    rootElement.style.scrollBehavior = 'auto';
+  }
+  
+  function enableScroll() {
+    window.onscroll = function () {}
+    rootElement.style.scrollBehavior = 'smooth';
+    playAudio();
+  }
+
+  function playAudio() {
+    lagu.volume = 0.1;
+    audioIconWrapper.style.display = 'flex';
+    lagu.play();
+    isPlaying = true;
+  }
+
+  audioIconWrapper.onclick = function() {
+    if(isPlaying === true){
+      lagu.pause();
+      audioIcon.classList.remove('bi-disc');
+      audioIcon.classList.add('bi-pause-circle');
+    }else{
+      lagu.play();
+      audioIcon.classList.add('bi-disc');
+      audioIcon.classList.remove('bi-pause-circle');
+    }
+
+    isPlaying = !isPlaying;
+  }
+  
+  disabelScroll();
+</script>
+
+<script>
+function salinRekening() {
+  const nomor = document.getElementById("rekening").innerText;
+  navigator.clipboard.writeText(nomor)
+    .then(() => {
+      alert("Nomor rekening berhasil disalin.");
+    })
+    .catch(err => {
+      console.error("Gagal menyalin", err);
+      alert("Gagal menyalin nomor rekening.");
+    });
+}
+</script>
+
+<script>
+  window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("konfirmasi kehadiran terkirim");
+    })
+  });
+});
+</script>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get('n');
+
+  const namaContainer = document.querySelector('.hero span');
+  namaContainer.innerText = nama;
+
+  document.querySelector('#nama').value = nama;
+</script>
+
+<script>
+  // 1. Hitung sisa karakter
+  const form = document.getElementById('wish-form');
+  const textarea = form.querySelector('textarea');
+  const sisaKarakter = document.getElementById('sisa-karakter');
+
+  textarea.addEventListener('input', () => {
+    sisaKarakter.textContent = 300 - textarea.value.length;
+  });
+
+  // 2. Kirim ucapan ke Web App
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch("https://script.google.com/macros/s/AKfycbzf_uTtzOJAKiJl9JTJqc6Q7YE3JgHxi6qKrGBuTRV-3v1Mtyn6jngD-y8sOHocakmt/exec", {
+      method: 'POST',
+      body: data
+    })
+    .then(() => {
+      alert("Ucapan berhasil dikirim!");
+      form.reset();
+      sisaKarakter.textContent = 300;
+      loadWishes(); // panggil ulang daftar ucapan
+    });
+  });
+
+  // 3. Ambil dan tampilkan ucapan tamu
+  function loadWishes() {
+    fetch("https://script.google.com/macros/s/AKfycbzf_uTtzOJAKiJl9JTJqc6Q7YE3JgHxi6qKrGBuTRV-3v1Mtyn6jngD-y8sOHocakmt/exec")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("list-wishes").innerHTML = html;
+      });
+  }
+
+  loadWishes();
+
+  // Panggil saat halaman dimuat
+  // window.addEventListener("load", loadWishes);
+</script>
+
+<!-- Konten HTML kamu -->
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  // Gabungkan semua elemen animasi
+  const elemenAnimasi = document.querySelectorAll(
+    '.slide-in-top, .animasi-daun, .animasi-daun1, .daun-tropis3, .bingkai3-bunga'
+  );
+
+  elemenAnimasi.forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+
+</body>
+</html>
+
+
+  </body>
+</html>

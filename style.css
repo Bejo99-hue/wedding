@@ -1,0 +1,1040 @@
+:root{
+    --darkBlue: rgba(15, 23, 42, 0.75);
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(15, 23, 42, 0.75), 0 2px 4px rgba(15, 23, 42, 0.75)
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: opacity(0.9);
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero .bingkai {
+  position: absolute;
+  z-index: -1;
+  top: 220px;
+  right: 30px;
+  width: 350px;
+}
+
+.hero h3, .hero h1, .hero p {
+    text-shadow: 0 4px 8px rgb(5, 4, 1);
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 4rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+.hero a {
+    color:  rgb(180, 187, 207);
+    background-color:rgba(15, 23, 42, 0.75);
+    text-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: rgba(51, 65, 85, 0.6);
+    color: rgb(124, 138, 172);
+    text-shadow: var(--shadow);
+    box-shadow: 0 4px 8px wheat;
+}
+
+.hero .bingkai {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (max-width: 576px) {
+  .hero .bingkai {
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* HALAMAN DUA */
+
+.kepala::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: opacity(0.9);
+}
+
+.kepala {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding: 5rem;
+  /* padding-top: 1rem; */
+}
+
+.kepala h1,
+.kepala .ridho {
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.2;
+  text-shadow: 0 4px 8px rgb(5, 4, 1);
+}
+
+.kepala p {
+  margin-top: 500px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .kepala h1,
+  .kepala .ridho {
+    font-size: 3.5rem;
+  }
+}
+
+.pagarKepala {
+  position: absolute;
+  width: 400px;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(70%);
+}
+
+@media (max-width: 576px) {
+  .pagarKepala {
+    width: 500px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.kepala .fotoKepala {
+  width: 300px;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kepala .bingkaiKepala {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) {
+  .kepala .fotoKepala {
+    width: 200px;
+    padding-top: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .kepala .bingkaiKepala {
+    width: 250px;
+    padding-top: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.daunKepala {
+  position: absolute;
+  bottom: -45px;
+  left: -20px; 
+  width: 270px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 576px) {
+  .daunKepala {
+    width: 250px;
+    bottom: -30px;
+    left: -100px;
+  }
+}
+
+.daunKepala2 {
+  position: absolute;
+  bottom: -100px;
+  right: -20px; 
+  width: 270px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 576px) {
+  .daunKepala2 {
+    width: 250px;
+  }
+}
+
+.daunKepala3 {
+  position: absolute;
+  bottom: -100px;
+  right: 250px;
+  width: 270px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 576px) {
+  .daunKepala3 {
+    width: 250px;
+    bottom: -100px;
+    right: 120px;
+  }
+}
+
+.bungaKepala {
+  position: absolute;
+  bottom: -40px;
+  right: 250px;
+  width: 150px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(70%);
+}
+
+@media (max-width: 576px) {
+  .bungaKepala {
+    width: 120px;
+    bottom: -30px;
+    right: 150px;
+  }
+}
+
+.bungaKepala2 {
+  position: absolute;
+  bottom: -40px;
+  right: 250px;
+  width: 150px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(50%);
+}
+
+@media (max-width: 576px) {
+  .bungaKepala2 {
+    width: 120px;
+    bottom: -20px;
+    right: 250px;
+  }
+}
+
+.bungaKepala3 {
+  position: absolute;
+  bottom: -40px;
+  left: 250px;
+  width: 150px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(50%);
+}
+
+@media (max-width: 576px) {
+  .bungaKepala3 {
+    width: 140px;
+    bottom: -30px;
+    left: 300px;
+  }
+}
+
+.bungaKepala4 {
+  position: absolute;
+  bottom: -40px;
+  left: 150px;
+  width: 150px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(50%);
+}
+
+@media (max-width: 576px) {
+  .bungaKepala4 {
+    width: 170px;
+    bottom: -30px;
+    left: -50px;
+  }
+}
+
+.bungaKepala5 {
+  position: absolute;
+  bottom: -40px;
+  left: 150px;
+  width: 150px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(40%);
+}
+
+@media (max-width: 576px) {
+  .bungaKepala5 {
+    width: 150px;
+    bottom: -30px;
+    left: 170px;
+  }
+}
+
+/* HALAMAN TIGA */
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: opacity(0.9);
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.home .bi{
+  background-color: rgb(159, 159, 3);
+  color: white;
+  border: none;
+  padding:4px 4px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.home h2{
+    font-family: "Sacramento";
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    padding-top: 7rem;
+    font-style: italic;
+}
+
+.home p{
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+}
+
+.home .couple{
+  margin-top: 100px;
+}
+
+.home .couple h3{
+  font-family: "Sacramento", cursive;
+  font-size: 2.4rem;
+  color: rgb(255, 255, 255);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .pagar {
+  position: absolute;
+  width: 500px;
+  bottom: 200px;
+  left: 200px;
+  z-index: -1;
+  pointer-events: none;
+  filter: opacity(0.5);
+}
+
+.row.couple {
+  display: flex;
+  gap: 11rem;
+  margin-top: 130px;
+}
+
+  .daunHome {
+    position: absolute;
+    bottom: -40px;
+    left: -500px;
+    width: 500px;
+    z-index: -1;
+    pointer-events: none;
+    filter: grayscale(100%);
+  }
+
+  @media (max-width: 576px) {
+    .daunHome {
+      width: 100px;
+      bottom: 250px;
+      left: -300px;
+    }
+  }
+
+
+/* HALAMAN EMPAT */
+
+.info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    filter: opacity(0.9);
+}
+
+.info{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.info .pembuka1 {
+  margin-top: 50px;
+  margin-bottom: 2rem;
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.info p {
+  color: #ffffff;
+}
+
+.info .pembuka2 {
+  margin-top: 5rem;
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.info .hari {
+  margin-top: 50px;
+  font-size: 1.7rem;
+  transform: translateX(-59px);
+  color: #ffffff;
+}
+
+.info .jadwal-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* jarak antar elemen */
+  font-size: 1.2rem;
+}
+
+.info .jadwal-horizontal .tanggal {
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+.info .jadwal-horizontal .separator {
+  color: #ffffff; /* warna emas atau pastel */
+  font-size: 5rem;
+}
+
+.info .jadwal-vertikal {
+  transform: translateY(11px);
+  color: #ffffff;
+}
+
+.info .bi {
+  font-size: 3rem;
+  margin-top: 5rem;
+  color: rgb(238, 255, 0);
+  display: inline-block;
+  text-shadow: 0 4px 6px rgb(0, 0, 0);
+  animation: naikTurun 1.5s ease-in-out infinite;
+}
+
+@keyframes naikTurun {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.info .hotel {
+  margin-top: 3rem;
+  color: #ffffff;
+}
+
+.info .pagar {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  right: -44px;
+  z-index: -1;
+  pointer-events: none;
+  filter: opacity(0.3);
+}
+
+@media (max-width: 576px) {
+  .info .pagar {
+    width: 450px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.bungaInfo {
+  position: absolute;
+  bottom: -10px;
+  left: 250px;
+  width: 150px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(80%);
+}
+
+@media (max-width: 576px) {
+  .bungaInfo {
+    width: 150px;
+    bottom: -10px;
+    left: 290px;
+  }
+}
+
+/* halaman lima */
+
+.galeri::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    filter: opacity(0.9);
+}
+
+.galeri {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 10px 1rem;
+}
+
+/* HALAMAN ENAM */
+
+.rsvp {
+  position: relative;
+  /* min-height: 100vh; */
+  background-image: url(img/b7.jpg);
+}
+
+.rsvp h2 {
+  font-family: "sacramento", cursive;
+  font-size: 4rem;
+  color: #ffffff;
+  margin-top: 3rem;
+}
+
+.rsvp .form-label {
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.rsvp .btn {
+  background-color: rgb(154, 161, 18);
+  color: white;
+  border: none;
+  padding: 7px 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.rsvp button {
+  font-size: 10px;
+  margin-bottom: 4rem;
+  color: rgb(154, 161, 18);
+}
+
+/* HALAMAN KETUJUH */
+
+.wedding-wishes {
+  background-color: #480216;
+  border: 2px solid #e0c4d3;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Work Sans', sans-serif;
+}
+
+.wedding-wishes h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wedding-wishes p {
+  color: #ffffff;
+}
+
+#wish-comments p {
+  background-color: #fffafc;
+  border: 2px solid #e0c4d3;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-family: 'Work Sans', sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* #list-wishes::before {
+  content: ;
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fffafc;
+  background-color: #fff;
+  border: 2px solid #e0c4d3;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+#list-wishes {
+
+} */
+
+.wedding-wishes form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wedding-wishes input,
+.wedding-wishes textarea {
+  padding: 10px;
+  border: 1px solid #d8b4c4;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.wedding-wishes button {
+  background-color: #a03c5b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wedding-wishes button:hover {
+  background-color: #872f4a;
+}
+
+.wedding-wishes iframe {
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  height: 300px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+/* HALAMAN KELAPAN */
+
+.gift::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    filter: opacity(0.9);
+}
+
+.gift {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 1rem;
+}
+
+.gift span {
+  display: inline-block;
+  color: #ffffff;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  font-size: small;
+}
+
+@media (max-width: 576px) {
+  .gift span {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gift .logo {
+    width: 160px;
+  }
+}
+
+.gift h2 {
+  font-family: "sacramento", cursive;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.gift p {
+  color: #ffffff;
+}
+
+.gift .btn {
+  background-color: rgb(154, 161, 18);
+  color: white;
+  border: none;
+  padding: 7px 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.gift button {
+  margin-bottom: 10rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.audio-icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 3.5rem;
+  right: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  animation: musik 4s linear infinite;
+}
+
+@keyframes musik {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query
+Leptop*/
+
+@media (max-width: 992px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+/* Hp */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/*tulisan gerak*/
+
+.slide-in-top {
+  opacity: 0;
+}
+
+.slide-in-top.active {
+  opacity: 1;
+  animation: slide 2s ease-out forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-top1 {
+  animation: slideInTop1 1s ease-in;
+}
+
+@keyframes slideInTop1 {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* bunga bergerak */
+.bingkai1-bunga {
+  position: absolute;
+ bottom: -60px; /* keluar dari batas bawah */
+  right: -30px; 
+  width: 350px;
+  z-index: -1; /* agar tidak menutupi konten */
+  pointer-events: none; /* tidak bisa diklik */
+  filter: grayscale(70%);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 576px) {
+  .bingkai1-bunga {
+    width: 220px;
+    bottom: -50px;
+    right: -20px;
+  }
+}
+
+.daun-tropis {
+  position: absolute;
+  bottom: -100px;
+  left: -20px; 
+  width: 270px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 576px) {
+  .daun-tropis {
+    width: 170px;
+    bottom: -50px;
+    left: -20px;
+  }
+}
+
+.daun-tropis1 {
+  position: absolute;
+  bottom: -50px;
+  left: -140px; 
+  width: 250px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 576px) {
+  .daun-tropis1 {
+    width: 220px;
+    bottom: -50px;
+    left: -120px;
+  }
+}
+
+.daun-tropis2 {
+  position: absolute;
+  bottom: 150px;
+  right: -70px; 
+  width: 200px;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 576px) {
+  .daun-tropis2 {
+    width: 100px;
+    bottom: 120px;
+    right: -40px;
+  }
+}
+
+@keyframes masuk {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi goyang */
+@keyframes goyangAngin {
+  0%   { transform: rotate(0deg);}
+  25%  { transform: rotate(2deg);}
+  50%  { transform: rotate(-2deg);}
+  75%  { transform: rotate(2deg);}
+  100% { transform: rotate(0deg);}
+}
+
+.animasi-daun {
+  opacity: 0;
+}
+
+.animasi-daun.active {
+  animation: masuk 3s ease-out forwards, goyangAngin 5s ease-in-out infinite;
+  animation-delay: 0s, 3s;
+  animation-fill-mode: forwards, none;
+}
+
+.daun-tropis3 {
+  position: absolute;
+  top: 100px;
+  left: -70px;
+  width: 200px;
+  z-index: -1;
+  pointer-events: none;
+  animation: slideAndRotate2 3s ease-out forwards;
+  transform-origin: center;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 576px) {
+  .daun-tropis3 {
+    width: 120px;
+    top: 100px;
+    left: -50px;
+  }
+}
+
+.bingkai3-bunga {
+  position: absolute;
+  top: -15px;
+  left: -20px; 
+  width: 400px;
+  z-index: -1;
+  pointer-events: none;
+  animation: slideAndRotate2 3s ease-out infinite;
+  transform-origin: center;
+  filter: grayscale(70%);
+}
+
+@media (max-width: 576px) {
+  .bingkai3-bunga {
+    width: 300px;
+    top: -10px;
+    left: 0px;
+  }
+}
+
+@keyframes masuk1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animasi goyang */
+@keyframes goyangAngin1 {
+  0%   { transform: rotate(0deg);}
+  25%  { transform: rotate(2deg);}
+  50%  { transform: rotate(-2deg);}
+  75%  { transform: rotate(2deg);}
+  100% { transform: rotate(0deg);}
+}
+
+.animasi-daun1 {
+  opacity: 0;
+}
+
+.animasi-daun1.active {
+  animation: masuk1 3s ease-out forwards, goyangAngin1 5s ease-in-out infinite;
+  animation-delay: 0s, 3s;
+  animation-fill-mode: forwards, none;
+}
+
